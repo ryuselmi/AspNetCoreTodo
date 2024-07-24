@@ -9,5 +9,7 @@ namespace AspNetCoreTodo.Services
     {
         Task<bool> AddItemAsync(TodoItem newItem);
         Task<TodoItem[]> GetIncompleteItemsAsync();
+        Task<bool> MarkDoneAsync(Guid id);
+
     }
 }
